@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  }
+  
+  .wrapper {
+    display: flex;
+  }
+  
+    .side-ber {
+      //左側
+      width: 300px;
+      &__user {
+        //左上の箱
+        background-color: #253141;
+        height: 100px;
+        display: flex;
+        align-items: center;
+      }
+        &__box {
+          //左上のhayama　
+          height: 20px;
+          width: 260px;
+          margin-left: 20px;
+          display: flex;
+          justify-content: space-between;
+          color: #ffffff;
+        }
+          &__box__right {
+            //左上の2つのアイコンマーク
+            display: flex;
+            &__mark1 {
+              padding: 0 5px;
+            }
+          }
+      &__groups {
+        //左中段のドラゴンボール　//まだメッセージがありません
+        background-color:#2f3e51;
+        height: calc(100vh - 100px);
+      }
+        &__group {
+          color: white;
+          padding: 20px;
+          &__name {
+            font-size: 15px;
+            margin-bottom: 5px;
+          }
+          &__message {
+            font-size: 11px;
+          }
+        }
+    }
+  
+    .main-chat {
+      //右側の箱
+    width: calc(100vw - 300px);
+      &__header {
+        //右上のグループ名「ドラゴンボール」の箱
+        height: 100px;
+      }
+        &__box {
+          padding: 35px 0px 0px 40px;
+          &__title {
+            font-size: 20px;
+            margin-bottom: 15px;
+          }
+          &__member {
+            font-size: 12px;
+            color: #999999;
+          }
+        }
+        &__edit {
+          //　右上のeditボタン
+          width: 72px;
+          height: 40px;
+          color: #38aef0;
+          position:absolute;
+          top: 28px;
+          right: 40px;
+          padding: 0 0 0 15px;
+          line-height: 40px;
+          border: solid #38aef0;
+        }
+    
+    
+    
+      &__list {
+        //右中段の孫悟空投稿
+        height: calc(100vh - 190px);
+        padding: 20px 40px 40px 0px;
+      }
+        &__post{
+          height: 20px;
+          padding: 35px 0 0 40px;
+          &__member {
+            float: left;
+            
+          }
+          &__time {
+            color: #999999;
+            font-size: 12px;
+          }
+        }
+        &__message__1 {
+          padding: 40px 40px 10px;
+        }
+    
+    
+    
+      &__footer {
+        //右下段のメッセージ入力
+        background-color: gray;
+        padding: 20px 40px;
+      }
+        &__word {
+          display: flex;
+        }
+          &__image {
+            width: 100%;
+            display: flex;
+            position: relative;
+            &__message {
+              width: 100%;
+              padding: 0 40px 0 10px; 
+            }
+              &__p {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+              }
+                &__p__icon {
+                  display: none;
+                }
+          }     
+          &__push {
+            //sendボタン
+            width: 100px;
+            color: white;
+            background-color: #38aef0;
+            line-height: 50px;
+            text-align: center;
+            margin-left: 15px;
+          }
+    }
+    
