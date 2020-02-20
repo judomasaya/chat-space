@@ -1,3 +1,39 @@
+.main-chat
+  .main-chat__header
+    .main-chat__box
+      %p.main-chat__box__title ドラゴンボール
+      %p.main-chat__box__member mdk
+      %li.main-chat__box__member 眞矢
+      %link{:href => "#"}/
+    .main-chat__edit Edit
+
+  .main-chat__list
+    .main-chat__post
+      %p.main-chat__post__member hayama
+      %p.main-chat__post__time 2020/02/16(Sun)15:12:02
+    %p.main-chat__message__1 孫悟空
+
+    .main-chat__post
+      %p.main-chat__post__member hayama
+      %p.main-chat__post__time 2020/02/16(Sun)15:12:02
+    %p.main-chat__message__1 孫悟空
+
+    .main-chat__post
+      %p.main-chat__post__member hayama
+      %p.main-chat__post__time 2020/02/16(Sun)15:12:02
+    %p.main-chat__message__1 孫悟空
+
+  .main-chat__footer
+    .main-chat__word
+      .main-chat__image
+        %input.main-chat__image__message{:name => "message[content]", :placeholder => "type a message", :type => "text"}/
+        %label.main-chat__image__p
+          = icon('far', 'image', class: "#")
+          %input{type: "file",class: "main-chat__image__p__icon"}
+      .main-chat__push send
+        
+
+
 
 
 
