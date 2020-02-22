@@ -2,12 +2,14 @@
   .side-ber
     .side-ber__user
       .side-ber__box
-        %p.side-ber__box__left hayama
+        %p.side-ber__box__left
+          =current_user.name
         %ul.side-ber__box__right
           %li.side-ber__box__right__mark1
-            = icon('fas', 'edit', class: "#")
+            = icon('fas', 'edit', class: 'icon')
           %li.side-ber__box__right__mark2
-            = icon('fa', 'cog', class: "#")
+            = link_to edit_user_path(current_user) do
+              = icon('fas', 'cog', class: 'icon')
     .side-ber__groups
       .side-ber__group
         %p.side-ber__group__name ドラゴンボール
