@@ -17,7 +17,7 @@
         align-items: center;
       }
         &__box {
-          //左上のhayama　
+          //左上の名前
           height: 20px;
           width: 260px;
           margin-left: 20px;
@@ -89,6 +89,7 @@
         //右中段の孫悟空投稿
         height: calc(100vh - 190px);
         padding: 20px 40px 40px 0px;
+        background-color: #fafafa;
       }
         &__post{
           height: 20px;
