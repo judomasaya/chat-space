@@ -15,3 +15,9 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+
+
+# 投稿画像はギットで管理する必要がない
+# ここに記述することでそれが可能となる
+public/uploads/*

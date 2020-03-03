@@ -1,3 +1,26 @@
 .chat-group-form
   %h1 チャットグループ編集
   = render partial: 'form', locals: { group: @group }
+
+
+  
+-# この’form’はedit.html.hamlに繋がっていた
+
+
+
+
+
+
+
+
+
+-# <% @posts.each do |post| %>
+-# <%= render partial: "post", locals: { post: post } %>
+-# <% end %>
+
+-#   例
+  
+-#   ここでのrenderメソッドのlocalsオプションに注目してみます。
+-#   { post: post }の右側のpostはeachメソッド内の変数としてのpostで
+-#   postのインスタンスを示しています。
+-#   一方、左側のpostは部分テンプレート内での変数の名前を表しています。
