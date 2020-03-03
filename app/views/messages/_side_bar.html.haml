@@ -13,12 +13,19 @@
               = icon('fas', 'cog', class: 'icon')
 
 
+
+
+
     .side-ber__groups
       - current_user.groups.each do |group|
         .side-ber__group
-          = link_to '#' do
-            %p.side-ber__group__name ドラゴンボール
-            %p.side-ber__group__message まだメッセージがありません
+          = link_to group_messages_path(group) do
+            .side-ber__group__name 
+              = group.name
+            .side-ber__group__message 
+              = group.show_last_message
+
+              
           
 
 

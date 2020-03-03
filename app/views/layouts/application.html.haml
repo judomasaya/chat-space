@@ -1,3 +1,6 @@
+-# アプリケーションのビューファイルを全てまとめたのがここ
+
+
 !!!
 %html
   %head
@@ -8,4 +11,9 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
     = render 'layouts/notifications'
+
+    
+    -# ここに全てのビューファイルが集約される=yield
     = yield
+
+-# だから全ての画面で表示されるチャットスペースのヘッダーはここに記載されてる
