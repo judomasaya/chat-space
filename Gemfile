@@ -38,6 +38,21 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'pry-rails'
+  gem 'rspec-rails', '~> 3.5'
+  gem 'rails-controller-testing'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  # factory_bot_rails 
+  # 簡単にダミーのインスタンスを作成することができるGemです。
+  # 他のファイルで予め各クラスのインスタンスに定めるプロパティを設定しておき、
+  # specファイルからメソッドを利用してその通りのインスタンスを作成します。
+  # factory_botを利用すれば、user_spec.rbは以下のように短い記述にすることができます。
+  # まずはRSpecを利用するためのrspec-rails、
+  # そして簡単にダミーのインスタンスを作成することができるfactory_bot_rails、
+  # ダミーデータを作成するためのfaker、
+  # コントローラのテストに必要なrails-controller-testing
+  # の4つのGemをインストールしましょう。
 end
 
 group :development do
@@ -61,3 +76,7 @@ gem 'devise'
 gem 'pry-rails'
 gem 'carrierwave'
 gem 'mini_magick'
+
+group :test, :development do 
+  gem 'capybara'
+end
