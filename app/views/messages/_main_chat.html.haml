@@ -11,67 +11,18 @@
     .main-chat__edit
       = link_to "Edit", edit_group_path(@group.id)
       
-      -# rails routesすると出る。
-      -#  edit_group GET    /groups/:id/edit(.:format)   groups#edit
-      -# edit_group  にpathをつける！
-      -# それで@group.id のデータを持ってくる。
 
-    
-
-
-    -# カリキュラム8. グループ編集ページへのリンクを設置する
-
-    -#   上記にリンクを設定し、編集ページへ行きたい
-    -#   提案１ = link_to "/groups/#{group.id}/edit", method: :get
-    -#    提案２ = link_to new_group_path do
-    -#   提案３ = link_to edit_post_path(@group.id), class: "postManage__edit"
-
-
-
-
-  -# ↓メンターさんにこの配置にセットしてもらいました
   .messages
     = render @messages
 
-  -# .main-chat__list
-  -#   .main-chat__post
-  -#     %p.main-chat__post__member hayama
-  -#     %p.main-chat__post__time 2020/02/16(Sun)15:12:02
-  -#   %p.main-chat__message__1 孫悟空
 
-  -#   .main-chat__post
-  -#     %p.main-chat__post__member hayama
-  -#     %p.main-chat__post__time 2020/02/16(Sun)15:12:02
-  -#   %p.main-chat__message__1 孫悟空
-
-  -#   .main-chat__post
-  -#     %p.main-chat__post__member hayama
-  -#     %p.main-chat__post__time 2020/02/16(Sun)15:12:02
-  -#   %p.main-chat__message__1 孫悟空
-
-  -# .main-chat__footer
-  -#   .main-chat__word
-  -#     .main-chat__image
-        -# .new_message
-  -#         %input.main-chat__image__message{:name => "message[content]", :placeholder => "type a message", :type => "text"}/
-  -#         %label.main-chat__image__p
-  -#           = icon('far', 'image', class: "#")
-  -#           %input{type: "file",class: "main-chat__image__p__icon"}
-  -#         .main-chat__push send
-
-
-
-
-
-  -# フォームフォーに変更してから、コネクトを何回もしているが
-  -# 解決できていない
   .main-chat__footer
     = form_for [@group, @message] do |f|
       .main-chat__create
-        = f.text_field :content, class: 'main-chat__create_type', placeholder: 'type a message'
+        = f.text_field :content, class: 'main-chat__create__type', placeholder: 'type a message'
         -# .main-chat__image
         = f.label :image, class: 'main-chat__image__p' do
           = icon('fas', 'image', class: "icon")
           = f.file_field :image, class: 'main-chat__image__p__icon'
-        = f.submit 'Send', class: 'main-chat__push'
+      = f.submit 'Send', class: 'main-chat__push'
 
