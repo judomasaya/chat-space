@@ -50,10 +50,6 @@ $(function(){
   return false;
   })
 
-
-
-
-
   //自動更新用の関数定義
   var reloadMessages = function () {
   
