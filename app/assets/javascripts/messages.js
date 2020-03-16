@@ -4,7 +4,7 @@ $(function(){
     let image = ( message.image ) ? `<img class= "lower-message__image" src=${message.image} >` : "";
 
   //messageクラスにdata-message-idを付与
-    let html = `<div class="message", "data-message-id"="${message.id}">
+    let html = `<div class="message", data-message-id="${message.id}">
 
 
                   <div class="upper-message">
