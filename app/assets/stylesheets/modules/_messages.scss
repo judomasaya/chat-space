@@ -43,6 +43,10 @@
         &__group {
           color: white;
           padding: 20px;
+          a {
+            text-decoration: none;
+          } 
+          
           &__name {
             font-size: 15px;
             margin-bottom: 5px;
@@ -87,7 +91,7 @@
           padding: 0 0 0 15px;
           line-height: 40px;
           border: solid 1px #38aef0;
-          .a {
+          a {
             text-decoration: none;
           }
         }
