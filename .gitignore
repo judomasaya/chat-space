@@ -21,3 +21,4 @@
 # 投稿画像はギットで管理する必要がない
 # ここに記述することでそれが可能となる
 public/uploads/*
+config/secrets.yml
