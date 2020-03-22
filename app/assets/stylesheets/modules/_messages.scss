@@ -93,6 +93,8 @@
           border: solid 1px #38aef0;
           a {
             text-decoration: none;
+            color: #38aef0;
+            padding: 0 0 0 3px;
           }
         }
     
@@ -132,7 +134,7 @@
       &__footer {
         //右下段のメッセージ入力
         background-color: gray;
-        padding: 20px 40px;
+        padding: 20px 0;
       }
         .new_message {
           // width: 100%;
@@ -155,6 +157,9 @@
             }
               .icon {
                 width: 1px;
+                position: absolute;
+                top:6px;
+                font-size: 20px;
               }
               &__image__p__icon {
                 width: 1px;
@@ -168,6 +173,7 @@
               line-height: 50px;
               text-align: center;
               margin-left: 15px;
+              cursor: pointer;
             }
           
     }
